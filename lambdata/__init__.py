@@ -3,9 +3,11 @@
 import pandas as pd
 import numpy as np
 
+FAVORITE_ANIMALS = ['BALD EAGLE', 'TARDIGRADE', 'MOUNTAIN LION', np.nan]
+
 def null_count(df):
     """Cleans dataFrames"""
-    # TODO: implement
+    return(df.isnull())
 
 
 print('prime')
