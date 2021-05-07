@@ -6,3 +6,6 @@ import numpy as np
 def null_count(df):
     """Cleans dataFrames"""
     # TODO: implement
+
+
+print('prime')
