@@ -9,8 +9,10 @@ import pandas as pd
 def null_count(df):
     return df.isnull().sum().sum()
 
-
-def train_test_split(df, frac=0.2):
+# Create a Train/Test split function for a dataframe and returns 
+# both the Training and Testing sets. Frac referes to the precent of 
+# data you would like to set aside for training.
+def train_test_split(df, frac):
     n_df = len(df)
     if n_df == 0:
         raise ValueError('At least one array required as input')
